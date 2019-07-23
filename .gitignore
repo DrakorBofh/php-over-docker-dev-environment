@@ -1,0 +1,23 @@
+# ignore IDE/hidden/OS cache files
+*~
+Session.vim
+tmtags
+Thumbs.db
+Desktop.ini
+
+# ignore Composer downloads
+/vendor/*
+
+# ignore composer
+.composer/*
+bin/*
+
+#ignore vim ctags
+tags
+
+# ignore runtime directories
+_db/*
+_rabbitmq/
+
+# ignore php_cs.cache
+.php_cs.cache

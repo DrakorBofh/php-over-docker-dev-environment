@@ -1,0 +1,35 @@
+{
+    "config": {
+        "bin-dir": "bin",
+        "cache-dir": ".composer/cache"
+    },
+    "require-dev": {
+        "pds/skeleton": "^1.0",
+        "fig-r/psr2r-sniffer": "^0.5.0",
+        "phpunit/phpunit": "^8.0",
+        "phpstan/phpstan": "^0.11.2",
+        "phpstan/phpstan-doctrine": "^0.11.1",
+        "phpstan/phpstan-phpunit": "^0.11.0"
+    },
+    "require": {
+        "doctrine/orm": "^2.6.2",
+        "symfony/yaml": "2.*",
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "yosymfony/toml": "^1.0",
+        "php-amqplib/php-amqplib": "^2.8",
+        "katzgrau/klogger": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {"": "src/", "Base": "src/", "Base/Tests": "tests/"},
+        "psr-4": {
+            "Base\\": "src/",
+            "Base\\Entities\\": "src/Entities",
+            "Base\\Managers\\": "src/Managers",
+            "Base\\AMPQConsumers\\": "src/AMPQConsumers",
+            "Base\\Networking\\": "src/Networking",
+            "Base\\Helpers\\": "src/Helpers",
+            "Base\\Tests\\": "tests/",
+            "Base\\Tests\\AMQP\\": "tests/AMQP"
+        }
+    }
+}

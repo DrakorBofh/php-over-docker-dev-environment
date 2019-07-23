@@ -1,0 +1,19 @@
+[logger]
+debug = true
+path = "__DIR__./logs"
+
+[database]
+dev_mode = true
+host = "mysql"
+port = 3306
+driver = "pdo_mysql"
+user = "root"
+password = "docker"
+db_name = "csbase"
+
+[rabbitmq]
+dev_mode = true
+host = "rabbitmq"
+port = 5672
+user = "bugs"
+password = "bugs"
